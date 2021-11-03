@@ -1,4 +1,4 @@
-import { cleanPhrase, getNgrams } from "./index";
+import { cleanPhraseWords, getNgrams } from "./index";
 
 const phrases = ["Show me the code.", "I am just testing my function"];
 
@@ -24,7 +24,7 @@ describe("getNgrams function validates params received", () => {
 
 describe("Evaluate getNgrams function phrase with testing phrases", () => {
   const getPhrasePermutationLength = (phrase) => {
-    const words = cleanPhrase(phrase);
+    const words = cleanPhraseWords(phrase);
     return (words.length * (words.length + 1)) / 2;
   };
 
