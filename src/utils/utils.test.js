@@ -1,4 +1,4 @@
-import { cleanPhraseWords, getNgrams } from "./index";
+import { cleanPhraseWords, getNgrams } from "./";
 
 const phrases = ["Show me the code.", "I am just testing my function"];
 
